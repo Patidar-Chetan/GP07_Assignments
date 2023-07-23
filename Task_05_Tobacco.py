@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[ ]:
 
 
 import requests
@@ -13,8 +10,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 import warnings
-warnings.filterwarnings("ignore", category=UserWarning, module=".*dash_core_components.*")
-warnings.filterwarnings("ignore", category=UserWarning, module=".*dash_html_components.*")
+warnings.simplefilter(action="ignore", category=UserWarning)
 
 
 # URL of the webpage containing the table
